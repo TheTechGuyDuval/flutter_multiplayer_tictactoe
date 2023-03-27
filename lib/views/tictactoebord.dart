@@ -38,7 +38,7 @@ class _TicTacToeBoardState extends State<TicTacToeBoard> {
         child: GridView.builder(
             itemCount: 9,
             gridDelegate:
-                SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+               const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
             itemBuilder: (context, index) {
               return GestureDetector(
                 onTap: () => tapped(index, roomDataProvider),
