@@ -1,17 +1,52 @@
-# tiktaktoe
+# Multiplayer TicTacToe Game
 
-A new Flutter project.
+A completely Responsive Multiplayer TicTacToe Game- Works on Android, iOS, Web & Desktop! 
 
-## Getting Started
+## Features
+- Create/Join Room
+- Play Realtime
+- Display Points
+- Round & Game Winner
+- Responsive Glow Themed UI
+- Cross Platform Game
 
-This project is a starting point for a Flutter application.
+## Installation
+After cloning this repository, migrate to ```flutter-multiplayer-tictactoe``` folder.
 
-A few resources to get you started if this is your first Flutter project:
+Install dependencies (Client Side)
+```bash
+flutter pub get
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Install dependencies (Server Side)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# flutter_multiplayer_tictactoe" 
+```bash
+cd server && npm install
+```
+
+Start the server
+
+```bash
+npm run dev
+```
+
+Configure for MacOS:
+Head to macos/Runner and make sure the following keys are present in DebugProfile.entitlements and Release.entitlements
+```bash
+<key>com.apple.security.network.server</key>
+<true/>
+<key>com.apple.security.network.client</key>
+<true/>
+```
+
+Run App
+```bash
+flutter run // After selecting the device you want to test on
+```
+
+## Tech Used
+**Server**: Node.js, Express, Socket.io, Mongoose, MongoDB
+
+**Client**: Flutter, Provider
+    
+
