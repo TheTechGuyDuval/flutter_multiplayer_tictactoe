@@ -103,7 +103,7 @@ class SocketMethods {
 
 
    void endGameListener(BuildContext context) {
-    _socketClient.on('enGame', (playerData) {
+    _socketClient.on('endGame', (playerData) {
       RoomDataProvider roomDataProvider =
           Provider.of<RoomDataProvider>(context, listen: false);
      showGameDialog(context, '${playerData['nickName']} won the game!');
